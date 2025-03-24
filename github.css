@@ -16,6 +16,23 @@ body {
     position: relative;
 }
 
+.center-container {
+    display: flex;
+    justify-content: center; /* Horizontal zentrieren */
+    align-items: center;    /* Vertikal zentrieren */
+    height: 200px;          /* Höhe des Containers */
+    margin-top: 20px;       /* Abstand vom Seitenanfang */
+}
+
+/* Profilbild gestalten */
+.profile-image {
+    border-radius: 50%; /* Rundes Bild */
+    width: 150px;       /* Breite des Bildes */
+    height: 150px;      /* Höhe des Bildes */
+    border: 2px solid #ccc; /* Optional: Rahmen um das Bild */
+}
+
+
 #userName {
     color: var(--accentColor);
     font-size: 1rem;
