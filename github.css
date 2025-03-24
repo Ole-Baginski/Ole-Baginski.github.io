@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+
+:root {
+    --bgColor: #2F4F4F;
+    --bgColor2: #090a0f;
+    --accentColor: white;
+    --delay: -3s;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans serif;
+    background-color: var(--bgColor2);
+    position: relative;
+}
+
+#userName {
+    color: var(--accentColor);
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1.25;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.links {
+    padding: 20px;
+    color: var(--accentColor);
+    font-weight: bold;
+    line-height: 1.25;
+    display: flex;
+    font-family: var(--font);
+    width: auto;
+    text-align: center;
+    text-decoration: none;
+    align-items: center;
+    flex-direction: column;
+}
+
+.link {
+    position: relative;
+    background-color: transparent;
+    color: var(--accentColor);
+    border: solid var(--accentColor) 2px;
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    width: 80%;
+    max-width: 675px;
+}
+
+.link:active {
+    background-color: var(--accentColor);
+    color: var(--bgColor);
+}
+
+@media (hover: hover) {
+    .link:hover {
+        background-color: var(--accentColor);
+        color: var(--bgColor);
+    }
+}
+
+/*-----------------------Fähigkeiten-----------------------*/
+
+.skills-box {
+    color: #FFFFFF;
+    background-color: #1a1b1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+.chips {
+    display: flex;
+    gap: 10px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.chip {
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+}
+
+.chip-red {
+    background-color: red;
+}
+.chip-green {
+    background-color: green;
+}
