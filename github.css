@@ -11,7 +11,8 @@ body {
     margin: 0;
     padding: 0;
     height: 100%;
-    font-family: Arial, sans serif;
+    font-family: Arial,'https://fonts.googleapis.com/css2?family=Sans+Serif&display=swap';
+   color: white;
     background-color: var(--bgColor2);
     position: relative;
 }
