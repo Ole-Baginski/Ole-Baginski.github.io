@@ -31,8 +31,68 @@ body {
     width: 150px;       /* Breite des Bildes */
     height: 150px;      /* Höhe des Bildes */
     border: 2px solid #ccc; /* Optional: Rahmen um das Bild */
+    cursor: pointer;
 }
 
+/* Popup-Container */
+.popup-container {
+    display: none; /* Standardmäßig ausgeblendet */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Halbtransparenter Hintergrund */
+    justify-content: center; /* Zentrale Ausrichtung */
+    align-items: center;
+    z-index: 9999; /* Über anderen Elementen */
+}
+
+/* Popup anzeigen, wenn der Link aktiv ist */
+#popup:target {
+    display: flex; /* Popup sichtbar machen */
+}
+
+/* Popup-Inhalt */
+.popup-content {
+    position: relative;
+    text-align: center;
+}
+
+/* Popup-Bild */
+.popup-image {
+    border-radius: 50%;
+    width: 300px; /* Größeres Bild im Popup */
+    height: 300px;
+    border: 3px solid #fff;
+}
+
+/* Schließen-Button */
+.close-btn {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    background: #333;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+#popup:target {
+    display: flex;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
 #userName {
     color: var(--accentColor);
@@ -120,4 +180,23 @@ body {
 }
 .chip-green {
     background-color: green;
+}
+
+.link-container {
+    display: flex; /* Flexbox aktivieren */
+    justify-content: right; /* Links gleichmäßig verteilen */
+    gap: 20px;
+    align-items: flex-end; /* Links vertikal ausrichten */
+    padding: 20px; /* Abstand nach innen */
+    box-sizing: border-box; /* Padding im Layout berücksichtigen */
+}
+
+.impressum, .Datenschutz {
+    color: white;
+    text-decoration: none;
+}
+
+.tree-box {
+    text-align: center;
+    justify-content: center;
 }
